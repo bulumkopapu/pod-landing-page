@@ -1,11 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+
+    background: #121725;
+    font-family: "Chivo", "sans-serif";
+    color: white;
+}
+
 .container {
     max-width: 1110px;
     margin: 0 auto;
-    padding: 0px 30px 0px 30px;
+    /* padding: 0px 30px 0px 30px; */
 }
+
+h1 {
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 62px;
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #C2CBE5;
+}
+
+/*------------------------------ HEADER SECTION ------------------------------*/
+
+header img {
+    margin-top:107px;
+}
+
+/*------------------------------ MAIN SECTION ------------------------------*/
+
+main .main-text {
+    max-width: 723px;
+    margin-top: 103px;
+    padding-top: 88px;
+    padding-right: 77px;
+}
+
+main .main-text p {
+    margin-top: 24px;
+    max-width: 445px;
+}
+
+main .main-text .company-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+main .main-text .company-logos img {
+    margin-right: 40px;
+}
+
+
+
+
+
+

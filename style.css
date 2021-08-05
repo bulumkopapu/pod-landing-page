@@ -7,10 +7,10 @@
 }
 
 body {
-
     background: #121725;
     font-family: "Chivo", "sans-serif";
     color: white;
+    padding: 0px 40px 0px 40px;
 }
 
 .container {
@@ -39,6 +39,24 @@ header img {
     margin-top:107px;
 }
 
+@media(max-width: 768px) {
+    header img {
+        margin-top:50px;
+    }
+}
+
+@media(max-width: 715px) {
+    header{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 375px) {
+    header img {
+        margin-top:62px;
+    }
+}
 /*------------------------------ MAIN SECTION ------------------------------*/
 
 main .main-text {
@@ -53,7 +71,52 @@ main .main-text p {
     max-width: 445px;
 }
 
+main form {
+    margin-top: 40px;
+}
+
+main form #email-box{
+    background: #2C344B;
+    border-radius: 28px;
+    padding: 14px 0 14px 32px;
+    width: 427px;
+    border: none;
+    
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+main form #submit-button{
+    background: #54E6AF;
+    box-shadow: 0px 2px 4px rgba(84, 230, 175, 0.14);
+    padding: 10px 28px 10px 28px;
+    border-radius: 28px;
+    border: none;
+    
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    color: #121725;
+
+    position: relative;
+    right: 172px;
+}
+
+main form #submit-button:hover{
+    background: #B3FFE2;
+    box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.2);
+    border-radius: 28px;
+    cursor: pointer;
+}
+
 main .main-text .company-logos {
+    margin-top: 64px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -63,6 +126,79 @@ main .main-text .company-logos {
 main .main-text .company-logos img {
     margin-right: 40px;
 }
+
+@media(max-width: 802px) {
+    main .main-text h1 {
+        font-size: 48px;
+    }
+}
+
+@media(max-width: 768px) {
+    main .main-text {
+        margin-top: 152px;
+        padding-top: 93px;
+        padding-right: 39px;
+    }
+}
+
+@media(max-width: 715px) {
+    main .main-text {
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main .main-text h1 {
+        text-align: center;
+        line-height: 56px;
+    }
+    main .main-text p {
+        text-align: center;
+    }
+
+    main form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    main form #email-box{
+        width: 100%;
+        margin-bottom: 16px;
+        
+    }
+    main form #submit-button{
+        position: static;
+        padding: 14px 28px 14px 28px;
+    }
+    main .main-text .company-logos {
+        width: 100%;
+    }
+    main .main-text .company-logos img {
+        flex-shrink: 2;
+    }
+}
+
+@media(max-width: 675px) {
+    main .main-text {
+        margin-top: 57px;
+    }
+    main .main-text h1 {
+        font-size: 38px;
+    }
+    main .main-text p {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 375px) {
+    main .main-text h1 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+}
+
+
 
 
 

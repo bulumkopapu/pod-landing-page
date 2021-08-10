@@ -12,6 +12,11 @@ body {
     color: white;
     padding: 0px 40px 0px 40px;
 }
+@media(max-width: 375px) {
+    body {
+        padding: 0px 24px 0px 24px;
+    }
+}
 
 .container {
     max-width: 1110px;
@@ -120,11 +125,14 @@ main .main-text .company-logos {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    max-width: 536px;
     
 }
 
 main .main-text .company-logos img {
-    margin-right: 40px;
+    /* margin-right: 40px; */
+    min-width: 10%;
 }
 
 @media(max-width: 802px) {
@@ -175,7 +183,7 @@ main .main-text .company-logos img {
         width: 100%;
     }
     main .main-text .company-logos img {
-        flex-shrink: 2;
+        /* flex-shrink: 2; */
     }
 }
 
@@ -188,6 +196,10 @@ main .main-text .company-logos img {
     }
     main .main-text p {
         font-size: 15px;
+    }
+
+    main .main-text .company-logos img {
+        
     }
 }
 

@@ -39,7 +39,10 @@ p {
 }
 
 /*------------------------------ HEADER SECTION ------------------------------*/
-
+header{
+    position: relative;
+    z-index: 10;
+}
 header img {
     margin-top:107px;
 }
@@ -63,12 +66,16 @@ header img {
     }
 }
 /*------------------------------ MAIN SECTION ------------------------------*/
-
+main{
+    position: relative;
+    z-index: 10;
+}
 main .main-text {
     max-width: 723px;
     margin-top: 103px;
     padding-top: 88px;
     padding-right: 77px;
+    background: #121725;
 }
 
 main .main-text p {
@@ -157,17 +164,21 @@ main .main-text .company-logos img {
         align-items: center;
     }
     main .main-text h1 {
+        order: 1;
         text-align: center;
         line-height: 56px;
     }
     main .main-text p {
+        order: 2;
         text-align: center;
     }
 
     main form {
+        order: 4;
         display: flex;
         flex-direction: column;
         width: 100%;
+        margin-top: 48px;
         
     }
     main form #email-box{
@@ -180,10 +191,17 @@ main .main-text .company-logos img {
         padding: 14px 28px 14px 28px;
     }
     main .main-text .company-logos {
+        order: 3;
         width: 100%;
+        max-width: none;
+        margin-top: 33px;
     }
-    main .main-text .company-logos img {
-        /* flex-shrink: 2; */
+
+    .company-logos img:nth-child(2) {
+        margin: 0 23px 0 25px;
+    }
+    .company-logos img:nth-child(3) {
+        margin: 0 16px 0 0;
     }
 }
 
@@ -197,10 +215,6 @@ main .main-text .company-logos img {
     main .main-text p {
         font-size: 15px;
     }
-
-    main .main-text .company-logos img {
-        
-    }
 }
 
 @media(max-width: 375px) {
@@ -210,9 +224,12 @@ main .main-text .company-logos img {
     }
 }
 
-
-
-
+/*------------------------------ Background Image ------------------------------*/
+.bigImage{
+    position: absolute;
+    top: 130px;
+    left: 552px;
+}
 
 
 

@@ -172,6 +172,8 @@ main .main-text .company-logos img {
     main .main-text {
         padding-right: 40px;
         padding-left: 40px;
+        padding-top: 0px;
+        margin-bottom: 60px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -222,6 +224,7 @@ main .main-text .company-logos img {
 @media(max-width: 675px) {
     main .main-text {
         margin-top: 57px;
+        padding-top: 0px;
     }
     main .main-text h1 {
         font-size: 38px;
@@ -247,6 +250,9 @@ main .main-text .company-logos img {
 .bigImage-tablet{
     display: none;
 }
+.bigImage-mobile{
+    display: none;
+}
 
 @media(max-width: 1024px) {
     .bigImage{
@@ -268,15 +274,22 @@ main .main-text .company-logos img {
 }
 @media(max-width: 715px) {
     .bigImage-tablet{
-        top: 0px;
-        left: 0px;
+        left: auto;
         width: 100%;
-        height: 100%;
     }
     .bigImage-tablet img{
         width: 100%;
-        /* mix-blend-mode: normal;
-        opacity: 0.1; */
+        height: 800px;
+        object-fit: cover;  
+        mix-blend-mode: normal;
+        opacity: 0.1;
+    }
+}
+
+@media(max-width: 375px) {
+    main .main-text {
+        padding-right: 25px;
+        padding-left: 25px;
     }
 }
 

@@ -245,7 +245,14 @@ main .main-text .company-logos img {
 .bigImage{
     position: absolute;
     top: 130px;
-    left: 552px;
+    left: 510px;
+    display: none;
+}
+.bigImage-two{
+    position: relative;
+    top: -645;
+    display: flex;
+    justify-content: flex-end;
 }
 .bigImage-tablet{
     display: none;

@@ -243,13 +243,8 @@ main .main-text .company-logos img {
 }
 
 /*------------------------------ Background Image ------------------------------*/
-.bigImage{
-    position: absolute;
-    top: 130px;
-    left: 510px;
-    display: none;
-}
-.bigImage-two{
+
+.bigImage-desktop{
     position: relative;
     top: -645;
     display: flex;
@@ -258,26 +253,38 @@ main .main-text .company-logos img {
 .bigImage-tablet{
     display: none;
 }
-.bigImage-mobile{
-    display: none;
+
+.dots-desktop{
+    position: relative;
+    top: -700;
+    display: flex;
+    justify-content: flex-end;
 }
 
-@media(max-width: 1024px) {
-    .bigImage{
-        position: absolute;
-        top: 130px;
-        left: 252px;
+@media(max-width: 985px) {
+    .bigImage-desktop img{
+        width: 100%;
     }
 }
+
 @media(max-width: 768px) {
-    .bigImage{
+    .bigImage-desktop img{
         display: none;
     }
+
     .bigImage-tablet{
-        display: block;
-        position: absolute;
-        top: 0px;
-        left: 277px;  
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: -770px;
+    }
+
+    .dots-desktop{
+        position: relative;
+        top: -612;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 30px;
     }
 }
 @media(max-width: 715px) {
@@ -291,6 +298,9 @@ main .main-text .company-logos img {
         object-fit: cover;  
         mix-blend-mode: normal;
         opacity: 0.1;
+    }
+    .dots-desktop{
+        display: none;
     }
 }
 

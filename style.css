@@ -260,6 +260,9 @@ main .main-text .company-logos img {
 }
 
 /*------------------------------ Background Image ------------------------------*/
+.images{
+    height: 0px;
+}
 
 .bigImage-desktop{
     position: relative;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pod Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header class="container">
@@ -21,10 +22,12 @@
                 to Spotify, Apple Podcasts, Google Podcasts,
                 Pocket Casts and more! 
             </p>
-            <form id="form">
-                <input type="text" placeholder="Email Address" id="email-box">
-                <input type="submit" value="Request Access" id="submit-button">
+            <form action="/" method="GET" id="form" novalidate>
+                <input type="email" name="email" id="email" placeholder="Email Address">
+                <!-- <input type="submit" id="submit" value="Request Access"> -->
+                <button type="submit" id="submit">Request Access</button>
             </form>
+            <div id="error"></div>
             <div class="company-logos">
                 <img src="media/companyLogos/spotify.png" alt="">
                 <img src="media/companyLogos/apple.png" alt="">
